@@ -20,14 +20,22 @@ export default class Histor0 extends Component {
                 if (!date.includes(item.date)) {
                     date.push(item.date);
                     result.push({
-                        date: item.date,
+                        id: item.date,
                         actions: [item],
-                        value: parseInt(item.value)
+                        value: item.value
                     })
                 } else {
-                    let { actions, value } = result[date.indexOf(item.date)];
+                    let { actions, value, id } = result[date.indexOf(item.date)];
+                    console.log(item.value, value);
+                    let x = value + item.value;
+                    value = x;
+                    console.log(x);
                     actions.push(item);
-                    value += parseInt(item.value);
+                    result[date.indexOf(item.date)] = Object.assign({}, {
+                        value: x,
+                        actions,
+                        id
+                    })
                 }
             });
             this.setState({
@@ -41,14 +49,17 @@ export default class Histor0 extends Component {
             return (
                 <div className="row" key={`action_${idx}`}>
                     <div className="col-md-8 mx-auto">
-                        <h2 className="section-heading text-left">
+                        <p className="text-bold text-left">
                             {itm.name}
-                        </h2>
+                        </p>
+                        <p className="text-muted text-left">
+                            {itm.description}
+                        </p>
                     </div>
                     <div className="col-md-4 mx-auto">
-                        <h2 className="section-heading text-right">
+                        <p className="text-bold text-right">
                             {itm.value}
-                        </h2>
+                        </p>
                     </div>
                 </div>
             );
@@ -60,7 +71,6 @@ export default class Histor0 extends Component {
         let { transactions } = this.state;
         if (!transactions.length) return <p>There's no transaction history!</p>
         let result = transactions.map((item, index) => {
-            console.log(item);
             let { actions } = item;
             return (
                 <div
@@ -71,7 +81,7 @@ export default class Histor0 extends Component {
                         <div className="row">
                             <div className="col-md-8 mx-auto">
                                 <h2 className="section-heading text-left">
-                                    {item.date}
+                                    {item.id}
                                 </h2>
                             </div>
                             <div className="col-md-4 mx-auto">

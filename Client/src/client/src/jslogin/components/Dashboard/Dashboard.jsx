@@ -16,14 +16,14 @@ export default class Dashboard extends Component {
                     id: 1,
                     name: '123',
                     date: '12/03/2018',
-                    descript: '12314',
-                    value: 123
+                    description: '12314',
+                    value: 1321132
                 },
                 {
                     id: 2,
                     name: '123',
                     date: '12/03/2018',
-                    descript: '12314',
+                    description: '12314',
                     value: -123 
                 }
             ]

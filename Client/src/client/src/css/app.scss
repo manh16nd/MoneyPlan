@@ -1,0 +1,38 @@
+#root {
+  overflow: auto;
+  zoom: 1;
+}
+@import "variables";
+@import "utilities";
+
+@import "animate";
+
+@import "attribute";
+@import "./form/index";
+@import "./chat/index";
+
+@import "./cluster-drag-box";
+@import "./pages/login";
+
+@import "./pages/account/index";
+@import "./pages/account/account";
+@import "./pages/account/notifications";
+@import "./pages/appsetting/index";
+@import "./pages/appsetting/general";
+
+@import "./pages/ticket/create_ticket";
+@import "./pages/ticket/list_ticket";
+@import "./pages/ticket/ticket_info";
+@import "./pages/ticket/header_bar";
+@import "./pages/appsetting/tree_view";
+@import "./pages/appsetting/department_node";
+@import "./pages/appsetting/StateProcess";
+@import "./pages/appsetting/team_node";
+@import "./pages/appsetting/department";
+@import "./pages/appsetting/upload";
+
+@import "./table/index";
+@import "./styles/layout";
+@import "./styles/navigation-menu";
+// @import "./pages/styles/layout";
+// @import "./pages/styles/select-popover";

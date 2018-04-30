@@ -1,0 +1,48 @@
+.scroll-area {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .scroll-area-track {
+        bottom: 2px;
+        display: block;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        -webkit-user-select: none;
+        width: 7px;
+        z-index: 5;
+    }
+
+    .scroll-area-wrap {
+        box-sizing: content-box;
+        width: inherit;
+        height: inherit;
+        margin-right: -30px;
+        padding-right: 30px;
+        overflow-y: scroll;
+    }
+
+    .scroll-area-gripper {
+        background-clip: content-box;
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(85, 85, 85, 0.6);
+        border-radius: 7px;
+        position: absolute;
+        right: 0;
+        transition: width 250ms;
+        width: 5px;
+    }
+}
+
+.message-list {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.message-group {
+    margin: 10px 14px;
+    position: relative;
+}

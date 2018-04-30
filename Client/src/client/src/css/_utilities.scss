@@ -1,0 +1,31 @@
+.mg-top-5 {
+	margin-top: 5px;
+}
+
+
+
+.btn-vid:hover {
+	color: #fff;
+	background-color: #d88200;
+	border-color: rgba(0,0,0,0.2);
+}
+
+.btn-vid {
+	color: #fff;
+	background-color: #fb9f14;
+	border-color: rgba(0,0,0,0.2);
+}
+
+.edit-infobox {
+	display: none;
+}
+
+.cs-pt {
+	cursor:pointer;
+}
+
+.infobox:hover {
+	.edit-infobox {
+		display: block;
+	}
+}

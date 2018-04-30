@@ -1,0 +1,162 @@
+.create-ticket{
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  .header-create-ticket {
+    padding-top: 20px;
+  .title-left{
+    float: left;
+    margin-left: 20px;
+  }
+  .h3create-ticket{
+    font-size: 23px;
+    margin-left: 55px;
+    margin-top: 0px;
+  }
+
+ }
+ .border-box-full{
+
+   border-color: #DADEE2;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-top-color: #DADEE2;
+
+ }
+ .border-box-content{
+   border-bottom-color: #DADEE2;
+   border-bottom: 1px;
+   border-bottom-style: inset;
+   .border-box-icon{
+     padding: 6px 12px 6px 13px;
+     border: 1px;
+     border-style: solid;
+     border-color: #D2D6DE;
+   }
+   .border-box-icon-with{
+     max-width: 72px;
+     min-width: 72px;
+   }
+   .clock-box{
+     width: 50px;
+     height: 33px;
+     margin-top: 2px;
+   }
+   .label-ticket{
+     margin-top: 5px;
+     margin-left: -1px;
+     float: left;
+   }
+   .col-ticket{
+     padding-left: 0px;
+     padding-right: 22px;
+   }
+   .icon-search{
+     padding-top: 10px;
+     position: absolute;
+     padding-left: 5px;
+   }
+   .input-search{
+     text-align: right;
+   }
+   .horizontal-row{
+     text-align: center;
+     .button-horizontal-row{
+       margin-left: 3px;
+       width: 85px;
+       float: right;
+     }
+   }
+   .textbox-content{
+     padding-left: 125px;
+   }
+   .border-box-content-full{
+     margin-left: 75px;
+     margin-right: 8px;
+     border: 1px solid gray;
+     padding: 10px 5px 5px 10px
+   }
+
+   .form-ticket-info{
+     margin-right: 10px;
+     margin-left: 0px;
+     .button-conner{
+       width: 112px;
+       float: right;
+     }
+     .border-box-icon-ticket-infor{
+      padding: 2px 17px 1px 6px;
+      margin-left: 27px;
+      border: 1px;
+      border-style: solid;
+      border-color: #D2D6DE;
+      max-width: 22px;
+     }
+     .dot-line{
+    position: relative;
+    border-right-style: dashed;
+    height: 125px;
+    border-right-width: 2px;
+    margin-top: -18px;
+    margin-bottom: -8px;
+    max-width: 55px;
+     }
+
+   }
+   .margin-button-ticket{
+     margin-right: 15px;
+   }
+   .title-box-left{
+     float: left;
+   }
+   .button-box-right{
+     float: right;
+   }
+   .col-1{
+     width: 4.333%;
+     float: left;
+   }
+   .col-11{
+     width: 95.666667%;
+     float: right;
+     text-align: justify;
+   }
+   .col-textbox-left{
+     width: 93.666667%;
+     float: left;
+   }
+   .col-icon-left{
+     width: 4.333%;
+     float: right;
+     margin-top: 6px;
+   }
+   .Button-Footer{
+     border: gray;
+     float: right;
+     border-style: solid;
+     border-width: 1px;
+
+   }
+
+ }
+ .icon-navicon{
+   float: right;
+   margin-right: 10px;
+   margin-top: -45px;
+ }
+ .box-clock{
+
+   margin-top: 20px;
+   .button-clock{
+     margin-right: 15px
+   }
+   .label-clock{
+     margin-top: -45px;
+     margin-bottom: 20px;
+   }
+ }
+}

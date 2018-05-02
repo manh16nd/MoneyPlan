@@ -44,7 +44,7 @@ class AccountForm extends React.Component {
         <BalanceTable {...this.props} />
         <Form.Group unstackable>
           <Form.Field width={9}></Form.Field>
-          <Form.Button width={7} y primary fluid content="Save Account" />
+          <Form.Button width={7} primary fluid content="Save Account" />
         </Form.Group>
       </Form>
     )

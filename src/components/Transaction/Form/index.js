@@ -12,7 +12,7 @@ import { DropdownOption } from '../../types'
 import './index.css'
 
 const NoAccounts = () => (
-  <div className="transactions-form__empty">You don't have any accounts.</div>
+  <div className="transactions-form__empty">You dont have any accounts.</div>
 )
 
 class TransactionForm extends React.Component {

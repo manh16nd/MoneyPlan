@@ -86,6 +86,7 @@ class App extends React.Component {
             )}
           />
         ))}
+        <Redirect to='/404' />
       </React.Fragment>
     )
   }

@@ -6,7 +6,9 @@ import routes from '../router/routes'
 const SidebarMenu = ({ isOpen, toggleSidebar }) => (
   <nav className={isOpen ? 'open' : 'closed'} onClick={toggleSidebar}>
     <Menu fluid color="blue" vertical icon="labeled">
-      {routes.map(route => (
+      {routes
+        .filter(route => route.path !== '/404')
+        .map(route => (
         <Route
           key={route.path}
           exact={route.exact}

@@ -3,6 +3,7 @@ import Transactions from '../containers/Transactions'
 import Accounts from '../containers/Accounts'
 import Reports from '../containers/Reports'
 import Settings from '../containers/Settings'
+import NotFound from '../containers/NotFound'
 
 export default [
   {
@@ -36,9 +37,14 @@ export default [
   },
   {
     path: '/settings',
-    exact: true,
+    exact: false,
     label: 'Settings',
     icon: 'options',
     component: Settings
+  },
+  {
+    path: '/404',
+    label: 'Not Found',
+    component: NotFound
   }
 ]

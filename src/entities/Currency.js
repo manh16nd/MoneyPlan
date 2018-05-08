@@ -152,7 +152,7 @@ const CURRENCY = {
 }
 
 const Currency = {
-  defaultBase: 'USD',
+  defaultBase: 'VND',
   options() {
     return Object.keys(CURRENCY).map(code => ({
       key: code,

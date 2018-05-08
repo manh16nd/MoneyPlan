@@ -10,7 +10,7 @@ body {
 
 @media (min-width: 768px) {
   body {
-    background-color: #f5f5f5;
+    background-color: #000000cc;
   }
 }
 
@@ -25,7 +25,7 @@ nav {
 
 @media (min-width: 1194px) {
   nav {
-    box-shadow: 0 2px 6px 0 rgba(34, 36, 38, 0.15),
+    box-shadow: 0 2px 6px 0 rgba(36, 38, 34, 0.15),
       0 2px 18px 0 rgba(34, 36, 38, 0.17);
   }
 }
@@ -52,13 +52,23 @@ nav .menu .item:last-child {
 .ui.menu {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+
+.ui.blue.menu {
+  background-color: #0000000e;
 }
 
 .ui.blue.menu .active.item,
 .ui.menu .blue.active.item {
-  color: #3f51b5 !important;
-  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #ffffff !important;
+  background-color: #0720559f;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.ui.labeled.icon.menu .item {
+  color: #f0e8e8d2 !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
 }
 
 .ui.menu .active.item {
@@ -129,7 +139,7 @@ nav .menu .item:last-child {
 @media (min-width: 768px) and (max-width: 1193px) {
   html,
   body {
-    background-color: white;
+    background-color: #000000cc;
   }
 
   .container-full-page {
@@ -156,6 +166,10 @@ nav .menu .item:last-child {
 
 .container-full-page.flat {
   padding: 0;
+}
+
+header {
+  background-color: #072055
 }
 
 header .ui.header {

@@ -17,6 +17,11 @@ const Header = ({ withTransfer, activeKind, changeKind }) => {
           name={Transaction.kindLabel(kind)}
           active={kind === activeKind}
           onClick={() => changeKind(kind)}
+
+          style = {{
+            backgroundColor: 'rgb(42,46,55)',
+            color: 'white'
+          }}
         />
       ))}
     </Menu>

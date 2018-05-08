@@ -10,7 +10,7 @@ body {
 
 @media (min-width: 768px) {
   body {
-    background-color: #000000cc;
+    background-color: rgb(42, 46, 55);
   }
 }
 
@@ -56,13 +56,13 @@ nav .menu .item:last-child {
 }
 
 .ui.blue.menu {
-  background-color: #0000000e;
+  background-color: rgb(55, 62, 72);
 }
 
 .ui.blue.menu .active.item,
 .ui.menu .blue.active.item {
   color: #ffffff !important;
-  background-color: #0720559f;
+  background-color: rgb(42, 46, 55);
   border-color: rgba(255, 255, 255, 0.15) !important;
 }
 
@@ -104,8 +104,9 @@ nav .menu .item:last-child {
 }
 
 .container-full-page {
+  color: white;
   display: block;
-  background-color: white;
+  background-color: rgb(42, 46, 55);
   font-size: 1.14285714rem;
   line-height: 1.5;
 }
@@ -139,7 +140,7 @@ nav .menu .item:last-child {
 @media (min-width: 768px) and (max-width: 1193px) {
   html,
   body {
-    background-color: #000000cc;
+    background-color:rgb(42, 46, 55);
   }
 
   .container-full-page {
@@ -169,7 +170,7 @@ nav .menu .item:last-child {
 }
 
 header {
-  background-color: #072055
+  background-color: rgb(42 , 46, 55);
 }
 
 header .ui.header {
@@ -275,7 +276,7 @@ h5 {
   padding: 1em;
   border-bottom: solid 1px #d4d4d5;
   border-radius: 5px 5px 0 0;
-  background: #f9fafb;
+  background: rgb(42, 46, 55);
 }
 
 .container-full-page .container-footer {

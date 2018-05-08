@@ -9,6 +9,7 @@ header {
   box-shadow: 0 2px 6px 0 rgba(34, 36, 38, 0.15),
     0 2px 18px 0 rgba(34, 36, 38, 0.17);
   z-index: 102;
+  background-color: rgb(55, 62, 72)
 }
 
 header .ui.header {

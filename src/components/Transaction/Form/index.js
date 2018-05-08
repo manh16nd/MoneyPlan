@@ -61,7 +61,7 @@ class TransactionForm extends React.Component {
           activeKind={this.props.form.kind}
           changeKind={this.props.changeKind}
         />
-        <Segment attached="bottom">
+        <Segment attached="bottom" style={{ backgroundColor: 'rgb(42, 46, 55)', color: 'white' }}>
           <Form onSubmit={this.onSubmit} className="transaction-form">
             <Account
               label={this.props.form.kind === INCOME ? 'To' : 'From'}
@@ -78,6 +78,7 @@ class TransactionForm extends React.Component {
             />
             {this.props.form.kind === TRANSFER && (
               <Account
+                style={{ backgroundColor: 'rgb(42, 46, 55)', color: 'white' }}
                 label="To"
                 accountId={this.props.form.linkedAccountId}
                 amount={this.props.form.linkedAmount}

@@ -15,8 +15,8 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => (
           path={route.path}
           children={({ match }) => (
             <Menu.Item as={Link} to={route.link || route.path} active={!!match}>
-              <Icon name={route.icon} />
-              {route.label}
+              <Icon name={route.icon} style={{color: 'rgb(152, 162, 182)'}}/>
+              <p  style={{color: 'rgb(152, 162, 182)'}}>{route.label}</p>
             </Menu.Item>
           )}
         />

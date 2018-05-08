@@ -11,7 +11,7 @@ class AccountsWidget extends React.Component {
 
     return (
       groups.length > 0 && (
-        <div className="account-widget">
+        <div className="account-widget" style={{color: 'white'}}>
           {groups.map(group => (
             <Group
               key={group}

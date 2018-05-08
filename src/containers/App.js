@@ -71,22 +71,24 @@ class App extends React.Component {
           isOpen={!isMobile || isSidebarOpen}
           toggleSidebar={toggleSidebar}
         />
-        {flatten(routes).map(route => (
-          <Route
-            key={route.path}
-            path={route.path}
-            exact={route.exact}
-            render={props => (
-              <React.Fragment>
-                <Header label={route.label} />
-                <div className="container">
-                  <route.component {...props} />
-                </div>
-              </React.Fragment>
-            )}
-          />
-        ))}
-        <Redirect to='/404' />
+        <Switch>
+          {flatten(routes).map(route => (
+            <Route
+              key={route.path}
+              path={route.path}
+              exact={route.exact}
+              render={props => (
+                <React.Fragment>
+                  <Header label={route.label} />
+                  <div className="container">
+                    <route.component {...props} />
+                  </div>
+                </React.Fragment>
+              )}
+            />
+          ))}
+          <Redirect to='/404' />
+        </Switch>
       </React.Fragment>
     )
   }

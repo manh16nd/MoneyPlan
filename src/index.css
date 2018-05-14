@@ -57,7 +57,7 @@ nav .menu .item:last-child {
 
 .ui.blue.menu .active.item,
 .ui.menu .blue.active.item {
-  color: #C34CC6 !important;
+  color: #8317A3 !important;
   border-left: solid 6px !important;
   border-color: rgba(0, 0, 0, 0.15) !important;
 }
@@ -160,7 +160,7 @@ nav .menu .item:last-child {
 } */
 
 header .ui.header h2 {
-  color: #C34CC6;
+  color: #8317A3;
   font-weight: 400;
 }
 
@@ -169,13 +169,13 @@ header .ui.header h2 {
 }
 
 .ui.header .icon {
-  color: #C34CC6;
+  color: #8317A3;
   padding-top: 0;
   font-weight: 300;
 }
 
 .ui.primary.button {
-  background-color: #C34CC6 !important;
+  background-color: #8317A3 !important;
 }
 
 .ui.button {

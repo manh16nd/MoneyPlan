@@ -1,13 +1,15 @@
 .logo {
   position: relative;
-  height: 16px;
-  top: -20px;
+  height: 64px;
+  top: -16px;
   left: -16px;
-  width: 125px;
+  width: 126px;
   text-align: center;
   padding: 15px;
+  background-color: #C34CC6 !important;
+  border-radius: 0 !important;
 }
 
 .logo img {
-  height: 42px;
+  height: 40px;
 }

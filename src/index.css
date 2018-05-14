@@ -25,8 +25,8 @@ nav {
 
 @media (min-width: 1194px) {
   nav {
-    box-shadow: 0 2px 6px 0 rgba(34, 36, 38, 0.15),
-      0 2px 18px 0 rgba(34, 36, 38, 0.17);
+    /* box-shadow: 0 2px 6px 0 rgba(34, 36, 38, 0.15),
+      0 2px 18px 0 rgba(34, 36, 38, 0.17); */
   }
 }
 
@@ -57,12 +57,9 @@ nav .menu .item:last-child {
 
 .ui.blue.menu .active.item,
 .ui.menu .blue.active.item {
-  color: #3f51b5 !important;
+  color: #C34CC6 !important;
+  border-left: solid 6px !important;
   border-color: rgba(0, 0, 0, 0.15) !important;
-}
-
-.ui.menu .active.item {
-  box-shadow: inset 0 1px 4px 0 rgba(34, 36, 38, 0.12) !important;
 }
 
 .container-raised-desktop {
@@ -149,8 +146,8 @@ nav .menu .item:last-child {
     padding: 0 1em 1em 1em;
     border: solid 1px rgba(0, 0, 0, 0.15);
     border-radius: 0.28571429rem;
-    box-shadow: 0 2px 4px 0 rgba(34, 36, 38, 0.12),
-      0 2px 10px 0 rgba(34, 36, 38, 0.15);
+    margin-top: 3%;
+    margin-bottom: 3%;
   }
 }
 
@@ -158,12 +155,13 @@ nav .menu .item:last-child {
   padding: 0;
 }
 
-header .ui.header {
+/* header .ui.header {
   color: white;
-}
+} */
 
 header .ui.header h2 {
-  font-weight: 300;
+  color: #C34CC6;
+  font-weight: 400;
 }
 
 .ui.header:first-child {
@@ -171,12 +169,13 @@ header .ui.header h2 {
 }
 
 .ui.header .icon {
+  color: #C34CC6;
   padding-top: 0;
   font-weight: 300;
 }
 
 .ui.primary.button {
-  background-color: #3f51b5 !important;
+  background-color: #C34CC6 !important;
 }
 
 .ui.button {

@@ -1,7 +1,7 @@
 .logo {
   position: relative;
   height: 16px;
-  top: -24px;
+  top: -20px;
   left: -16px;
   width: 125px;
   text-align: center;
@@ -9,5 +9,5 @@
 }
 
 .logo img {
-  height: 50px;
+  height: 42px;
 }

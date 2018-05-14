@@ -1,7 +1,11 @@
 {
-  "name": "money-tracker",
-  "version": "0.0.1",
+  "name": "money-plan",
+  "version": "1.0.0",
   "private": true,
+  "engines": {
+      "node": "8.9.4",
+      "npm": "5.6.0"
+  },
   "dependencies": {
     "auth0-js": "9.3.3",
     "chartist": "^0.11.0",

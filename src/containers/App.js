@@ -5,7 +5,6 @@ import { Dimmer, Loader } from 'semantic-ui-react'
 import { connect } from 'react-redux'
 import throttle from 'lodash/throttle'
 import routes from '../router/routes'
-import Auth from './Auth'
 import InitialSetup from './InitialSetup'
 import SidebarMenu from './SidebarMenu'
 import Header from '../components/Header'
@@ -38,7 +37,6 @@ class App extends React.Component {
     return (
       <Router history={this.props.history}>
         <Switch>
-          <Route path="/auth" exact={true} component={Auth} />
           {!this.props.isSetupComplete ? (
             <Route component={InitialSetup} />
           ) : (
@@ -49,11 +47,6 @@ class App extends React.Component {
     )
   }
 
-  /**
-   * Navigation routes are the pages associated to navigation menu items,
-   * e.g. Dashboard, Transactions, Settings etc.
-   * They are rendered with common structure: sidebar menu and sticky header.
-   */
   renderNavigationRoutes = () => {
     if (window.location.pathname.endsWith('index.html')) {
       return <Redirect to="/" />

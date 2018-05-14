@@ -12,10 +12,10 @@ it('returns initial state', () => {
     isLoaded: false,
     isSetupComplete: false,
     currency: {
-      base: 'USD',
+      base: 'VND',
       secondary: []
     },
-    exchangeRate: { USD: 1.0 },
+    exchangeRate: { VND: 1.0 },
     collapsedSections: []
   })
 })

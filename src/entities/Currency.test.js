@@ -1,7 +1,7 @@
 import Currency from './Currency'
 
 it('has default base currency', () => {
-  expect(Currency.defaultBase).toEqual('USD')
+  expect(Currency.defaultBase).toEqual('VND')
 })
 
 it('returns list of options', () => {
@@ -14,9 +14,9 @@ it('returns list of options', () => {
   expect(options[0]).toHaveProperty('flag')
   expect(options[0]).toHaveProperty('text')
 
-  const usdOption = options.find(option => option.key === 'USD')
-  expect(usdOption.text).toEqual('USD, US Dollar')
-  expect(usdOption.flag).toEqual('us')
+  const usdOption = options.find(option => option.key === 'VND')
+  expect(usdOption.text).toEqual('VND, Vietnam Dong')
+  expect(usdOption.flag).toEqual('vn')
 })
 
 it('returns currency name', () => {
@@ -25,7 +25,7 @@ it('returns currency name', () => {
 
 it('returns currency minimal amount', () => {
   expect(Currency.minAmount('USD')).toEqual(0.01)
-  expect(Currency.minAmount('JPY')).toEqual(1)
+  expect(Currency.minAmount('VND')).toEqual(1)
   expect(Currency.minAmount('KWD')).toEqual(0.001)
 })
 

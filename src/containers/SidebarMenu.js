@@ -9,9 +9,9 @@ const SidebarMenu = ({ isOpen, toggleSidebar }) => (
       {routes
         .filter(route => route.path !== '/404')
         .map(route => (
-        <Route
-          key={route.path}
-          exact={route.exact}
+          <Route
+            key={route.path}
+            exact={route.exact}
           path={route.path}
           children={({ match }) => (
             <Menu.Item as={Link} to={route.link || route.path} active={!!match}>

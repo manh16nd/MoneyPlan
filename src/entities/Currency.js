@@ -141,7 +141,7 @@ const CURRENCY = {
   UYU: { name: 'Uruguayan peso', symbol: '$U', exp: 2, flag: 'uy' },
   UZS: { name: 'Uzbekistani som', symbol: 'лв', exp: 2, flag: 'uz' },
   VEF: { name: 'Venezuelan bolivar', symbol: 'Bs', exp: 2, flag: 've' },
-  VND: { name: 'Vietnamese Dong', symbol: '₫', exp: 0, flag: 'vn' },
+  VND: { name: 'Vietnam Dong', symbol: '₫', exp: 0, flag: 'vn' },
   VUV: { name: 'Vanuatu Vatu', symbol: 'VT', exp: 0, flag: 'vu' },
   WST: { name: 'Samoan Tālā', symbol: '$', exp: 2, flag: 'ws' },
   YER: { name: 'Yemeni Rial', symbol: 'YER', exp: 2, flag: 'ye' },
@@ -152,7 +152,7 @@ const CURRENCY = {
 }
 
 const Currency = {
-  defaultBase: 'USD',
+  defaultBase: 'VND',
   options() {
     return Object.keys(CURRENCY).map(code => ({
       key: code,

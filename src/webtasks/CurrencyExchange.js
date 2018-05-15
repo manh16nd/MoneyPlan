@@ -1,24 +1,24 @@
 /**
  * This webtask is used to fetch current exchange rate for any given currency pair.
  * It gets base exchange rate data from currencylayer.com and caches it in webtask storage for 1 hour.
- * It uses cross rate for pairs where base is not USD.
+ * It uses cross rate for pairs where base is not VND.
  *
  * Usage:
- * HTTP GET https://wt-e9c9a7a436fcd9273a7f8890849dae65-0.run.webtask.io/currency-exchange?pairs=USDEUR,EURUSD,USDJPY,EURJPY
+ * HTTP GET https://wt-e9c9a7a436fcd9273a7f8890849dae65-0.run.webtask.io/currency-exchange?pairs=VNDEUR,EURVND,VNDJPY,EURJPY
  * Response:
  * {
  *   "ok": "true",
  *   "rates": [
  *      {
- *        "id": "USDEUR",
+ *        "id": "VNDEUR",
  *        "rate": "0.834303"
  *      },
  *      {
- *        "id": "EURUSD",
+ *        "id": "EURVND",
  *        "rate": "1.198605"
  *      },
  *      {
- *        "id": "USDJPY",
+ *        "id": "VNDJPY",
  *        "rate": "109.678001"
  *      },
  *      {
@@ -30,7 +30,7 @@
  */
 module.exports = function(context, respond) {
   const request = require('request')
-  const BASE = 'USD'
+  const BASE = 'VND'
   const pairs = context.query.pairs.toUpperCase().split(',')
 
   return getBaseRate()
@@ -44,16 +44,16 @@ module.exports = function(context, respond) {
 
   /**
    * Get exchange rate for given pair using given base exchange rate.
-   * Use cross rate if pair's base is not equal to rate base (USD).
+   * Use cross rate if pair's base is not equal to rate base (VND).
    *
-   * @param {object} baseRate - dict { USD: 1, EUR: 0.834499, ... }
-   * @param {string} pair - "USDEUR", "EURUSD", "EURJPY", etc
-   * @return {object} dict { id: "USDEUR", rate: "0.834499" }
+   * @param {object} baseRate - dict { VND: 1, EUR: 0.834499, ... }
+   * @param {string} pair - "VNDEUR", "EURVND", "EURJPY", etc
+   * @return {object} dict { id: "VNDEUR", rate: "0.834499" }
    */
   function getRateForPair(baseRate, pair) {
     if (pair.length != 6) {
       throw new Error(
-        `Invalid pair "${pair}". Must be 6-char string, e.g. "USDEUR"`
+        `Invalid pair "${pair}". Must be 6-char string, e.g. "VNDEUR"`
       )
     }
 
@@ -74,9 +74,9 @@ module.exports = function(context, respond) {
   }
 
   /**
-   * Get exchange rate for base currency (USD).
+   * Get exchange rate for base currency (VND).
    *
-   * @return {object} dict { USD: 1, EUR: 0.834499, ... }
+   * @return {object} dict { VND: 1, EUR: 0.834499, ... }
    */
   function getBaseRate() {
     return fetchCachedRate()
@@ -112,7 +112,7 @@ module.exports = function(context, respond) {
    */
   function fetchLiveRate() {
     return new Promise(resolve => {
-      const apiKey = context.secrets.apiKey
+      const apiKey = '2def1e5143cd35984996972a8f9561e8'
       request(
         {
           method: 'GET',
@@ -160,8 +160,8 @@ module.exports = function(context, respond) {
   /**
    * Convert response from API service to internal rate object.
    *
-   * @param {object} dict { ..., quotes: { USDUSD: 1, USDEUR: 0.834499, ... } }
-   * @return {object} dict { USD: 1, EUR: 0.834499, ... }
+   * @param {object} dict { ..., quotes: { VNDVND: 1, VNDEUR: 0.834499, ... } }
+   * @return {object} dict { VND: 1, EUR: 0.834499, ... }
    */
   function convertRate(rate) {
     return Object.keys(rate.quotes).reduce((acc, pair) => {

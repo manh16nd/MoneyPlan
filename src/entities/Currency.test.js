@@ -20,7 +20,7 @@ it('returns list of options', () => {
 })
 
 it('returns currency name', () => {
-  expect(Currency.name('USD')).toEqual('US Dollar')
+  expect(Currency.name('VND')).toEqual('Vietnam Dong')
 })
 
 it('returns currency minimal amount', () => {

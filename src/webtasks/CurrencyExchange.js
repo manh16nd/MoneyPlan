@@ -4,7 +4,7 @@
  * It uses cross rate for pairs where base is not VND.
  *
  * Usage:
- * HTTP GET https://wt-e9c9a7a436fcd9273a7f8890849dae65-0.run.webtask.io/currency-exchange?pairs=VNDEUR,EURVND,VNDJPY,EURJPY
+ * HTTP GET https://wt-f75ad468eddab489b898842b68f2d29a-0.sandbox.auth0-extend.com/CurrencyExchange?pairs=VNDEUR,EURVND,VNDJPY,EURJPY
  * Response:
  * {
  *   "ok": "true",
